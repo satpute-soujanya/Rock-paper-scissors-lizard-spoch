@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor Lizard Spock</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game_container">
+      <!-- Heading -->
+      <div class="header">
+        <h1>Rock Paper Scissor Lizard Spock</h1>
+      </div>
+      <!-- Player Container -->
+      <div class="player_container" id="player">
+        <h2>
+          You <span id="player_score"> </span>
+          <span class="choice" id="player_choice"> → choice</span>
+        </h2>
+        <i
+          class="fas fa-hand-rock"
+          title="Rock"
+          id="player_rock"
+          onclick="select('rock')"
+        ></i>
+        <i
+          class="fas fa-hand-paper"
+          title="Paper"
+          id="player_paper"
+          onclick="select('paper')"
+        ></i>
+        <i
+          class="fas fa-hand-scissors"
+          title="Scissors"
+          id="player_scissors"
+          onclick="select('scissors')"
+        ></i>
+        <i
+          class="fas fa-hand-lizard"
+          title="Lizard"
+          id="player_lizard"
+          onclick="select('lizard')"
+        ></i>
+        <i
+          class="fas fa-hand-spock"
+          title="Spock"
+          id="player_spock"
+          onclick="select('spock')"
+        ></i>
+      </div>
+      <!-- computer Container -->
+      <div class="player_container" id="computer">
+        <h2>
+          Computer <span id="computer_score"> </span>
+          <span class="choice" id="computer_choice"> → choice</span>
+        </h2>
+        <i class="fas fa-hand-rock" title="Rock" id="computer_rock"></i>
+        <i class="fas fa-hand-paper" title="Paper" id="computer_paper"></i>
+        <i
+          class="fas fa-hand-scissors"
+          title="Scissors"
+          id="computer_scissors"
+        ></i>
+        <i class="fas fa-hand-lizard" title="Lizard" id="computer_lizard"></i>
+        <i class="fas fa-hand-spock" title="Spock" id="computer_spock"></i>
+      </div>
+      <i class="fas fa-sync-alt reset_icon" title="reset" onclick="resetAll()">
+      </i>
+
+      <div class="result_container">
+        <h3 class="restult_text" id="result_text"></h3>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <!-- <script src="./confetti.js"></script>
+    <script src="./script.js"></script> -->
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
